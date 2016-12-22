@@ -1,0 +1,21 @@
+{
+  "globalDependencies": {
+    "chalk": "registry:dt/chalk#0.4.0+20160317120654",
+    "cookies": "registry:dt/cookies#0.5.1+20160316171810",
+    "hammerjs": "registry:dt/hammerjs#2.0.8+20160724063812",
+    "handsontable": "registry:dt/handsontable#0.24.3+20161001154919",
+    "koa": "registry:dt/koa#2.0.0+20161025101853",
+    "koa-bodyparser": "registry:dt/koa-bodyparser#3.0.0+20160928122441",
+    "koa-compress": "registry:dt/koa-compress#2.0.0+20160906140257",
+    "koa-router": "registry:dt/koa-router#7.0.0+20160907102352",
+    "koa-static": "registry:dt/koa-static#2.0.0+20160807195632",
+    "lodash": "registry:dt/lodash#4.14.0+20161110215204",
+    "moment": "registry:dt/moment#2.11.1+20161010105546",
+    "node": "registry:dt/node#6.0.0+20160621231320",
+    "numbro": "registry:dt/numbro#0.0.0+20160316155526",
+    "pikaday": "registry:dt/pikaday#0.0.0+20160812121421",
+    "xml2js": "registry:dt/xml2js#0.0.0+20160317120654",
+    "zeroclipboard": "registry:dt/zeroclipboard#2.0.0+20151202024443"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,5 @@
+<div>
+	<dynamic-form [formModel]="form" (notify)='onNotify($event)'></dynamic-form>
+
+	<div *ngIf="warning" > [warning.text]</div>
+</div>

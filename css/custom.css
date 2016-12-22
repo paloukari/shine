@@ -1,0 +1,72 @@
+body {
+    background-image: url(images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+@font-face {
+    font-family: Roboto;
+   src: url(fonts/roboto.woff2);
+}
+
+*{
+   font-family: Roboto, sans-serif;
+}
+
+fieldset {
+    margin-top:20;
+    border: none;
+}
+
+legend{
+    margin-bottom:20;
+}
+div.formcontainer{
+    background:rgba(255,255,255,0.96);
+    z-index:-1;
+    position:absolute;
+    border-radius: 10px;
+    border-color:  rgb(165, 162, 162);
+    border-style: solid;
+    margin-top: -10;
+    margin-left: -42;
+    margin-bottom: 10;
+    -moz-box-shadow: 0 0 30px #ccc;
+    -webkit-box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 30px #ccc;
+}
+
+label{
+    text-align:left;
+}
+
+ul.feed {
+    position: fixed;
+    bottom: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+div.loading{
+    font-size:80px;
+   text-align: center;
+}
+
+li.feed {
+    float: left;
+}
+
+li.feed a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
+
+li.feed a:hover {
+    background-color: #111111;
+}

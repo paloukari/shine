@@ -1,0 +1,13 @@
+{{diagnostic}}
+<h1 style="text-align: center">
+        {{title}}
+</h1>
+<div style="text-align: center">
+        <input style="text-align: center" type="text" (input)="inputChanged($event)" [(value)]="searchTerm" />
+
+        <xml-document-renderer [document]="document"> </xml-document-renderer>
+
+        <simple-notifications [options]="toastOptions"></simple-notifications>
+
+</div>
+<dashboard ></dashboard>

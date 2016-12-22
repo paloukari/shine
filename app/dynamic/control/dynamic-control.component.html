@@ -1,0 +1,33 @@
+<div [formGroup]="formGroup">
+   <div [ngSwitch]="controlData.controlType" style="position: relative;">
+
+      <status-message *ngSwitchCase="'statusmessage'" [message]="controlData.message"></status-message>
+
+      <input *ngSwitchCase="'textbox'" [(value)]="controlData.value" style="position: absolute;" [tabindex]="controlData.tabindex"
+         [formControlName]="controlData.name" [id]="controlData.key" [type]="controlData.type" [style.top]="controlData.top"
+         [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height">
+
+
+      <select *ngSwitchCase="'dropdown'" [multiple]="controlData.isListBox" style="position: absolute;" [id]="controlData.name"
+         #s (change)="onChange(s.selectedIndex)" [tabindex]="controlData.tabindex" [formControlName]="controlData.name" [style.top]="controlData.top"
+         [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height">
+      <option *ngFor="let option of controlData.children" [value]="option.name">{{option.value}}</option>
+    </select>
+
+      <label *ngSwitchCase="'label'" style="position: absolute;" [tabindex]="controlData.tabindex" [style.top]="controlData.top"
+         [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height"><div [innerHTML]="controlData.caption"></div></label>
+
+      <button *ngSwitchCase="'button'" style="position: absolute;" (click)="onClick($event)" [tabindex]="controlData.tabindex"
+         [style.top]="controlData.top" [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height"><div [innerHTML]="controlData.caption"></div></button>
+
+      <div *ngSwitchCase="'checkbox'" style="position: absolute;" [tabindex]="controlData.tabindex" [style.top]="controlData.top"
+         [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height">
+         <input type="checkbox" [formControlName]="controlData.name" [id]="controlData.key" [(value)]="controlData.value">         {{controlData.caption}}
+         <br/>
+      </div>
+      <dynamic-table *ngSwitchCase="'grid'" [data]="controlData.data" [colHeaders]="controlData.colHeaders" [columns]="controlData.columns" [options]="controlData.options" [colWidths]="controlData.colWidths"
+
+      style="position: absolute;" [tabindex]="controlData.tabindex" [style.top]="controlData.top"
+         [style.left]="leftOffset + controlData.left" [style.width]="controlData.width" [style.height]="controlData.height"></dynamic-table>
+   </div>
+</div>

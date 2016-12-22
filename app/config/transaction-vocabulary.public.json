@@ -1,0 +1,18 @@
+{
+   "read": "read",
+   "screen": "screen",
+   "transactionRoot": "transactionRoot",
+   "write": "write",
+   "reset": "reset",
+   "function": "function",
+   "address": "address",
+   "transaction": "transaction",
+   "transactionName": "transactionName",
+   "screenUpdate": "screenUpdate",
+   "condition": "condition",
+   "false": "false",
+   "true": "true",
+   "action": "action",
+   "return": "return",
+   "method": "method"
+}

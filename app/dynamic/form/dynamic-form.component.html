@@ -1,0 +1,12 @@
+<form>
+  <fieldset>
+    <legend style="text-align: center">{{caption}}</legend>
+    <div *ngFor="let control of controls" class="form-row">
+      <dynamic-control [controlData]="control" [leftOffset]="leftOffset" [formGroup]="formGroup" (notify)='onNotify($event)'></dynamic-control>
+    </div>
+    <div class="formcontainer" [style.left]="leftOffset" [style.width]="width" [style.height]="height">
+
+    </div>
+  </fieldset>
+
+</form>

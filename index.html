@@ -1,0 +1,46 @@
+<html>
+
+<head>
+   <base href="/">
+   <title>Online</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="css/custom.css">
+
+   <!--handsome-table-->
+   <link rel="stylesheet" media="screen" href="node_modules/handsontable/dist/handsontable.full.css">
+   <script src="node_modules/handsontable/dist/handsontable.full.js"></script>
+
+   <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+   <!-- Polyfill(s) for older browsers -->
+   <script src="node_modules/core-js/client/shim.min.js"></script>
+   <script src="node_modules/zone.js/dist/zone.js"></script>
+   <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+   <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+
+   <script src="systemjs.config.js"></script>
+   <script>
+      System.import('app')
+      .then(function (_) { } )
+      .catch(function(err){ console.error(err); });
+    </script>
+
+
+</head>
+
+<body>
+   <boot-app>
+      <div class="loading">Loading...</div>
+   </boot-app>
+
+   <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:8000/browser-sync/browser-sync-client.js?v=2.17.5'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+  "apiUrl": "http://localhost:3000/api",
+  "mode": "Development",
+  "screenWidth": "800",
+  "screenHeight": "600"
+}
